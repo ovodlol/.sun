@@ -1,8 +1,12 @@
 -- requires(chama as confgurações de outros arquivos):
-  package.path = package.path .. ';C:\\Users\\Eduardo\\AppData\\Local\\nvim\\?.lua'
+  package.path = package.path .. ';C:\\Users\\Eduardo\\AppData\\Local\\nvim\\plugins\\configs\\?.lua'
   require('cnt')
--- plugins
-  require('laz')
+
+  -- mini.file
+    -- require('').setup({})
+
+  -- plugins
+    require('laz')
 
   -- alpha
     require('alp')
