@@ -13,4 +13,4 @@
         local keymap = vim.api.nvim_set_keymap
         local opts = { noremap = true, silent = true }
         keymap('i', '<C-s>', '<cmd>w<CR>', opts)
-        keymap('n', '<C-i>', '<cmd>PlugInstall<CR>', opts)
+        keymap('n', '<C-i>', '<cmd>Lazy<CR>', opts)

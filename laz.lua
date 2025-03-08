@@ -37,11 +37,10 @@ vim.opt.rtp:prepend(lazypath)
       "nvim-telescope/telescope-file-browser.nvim"
       } 
     },
-    { 'tpope/vim-sensible' },
+    -- { 'tpope/vim-sensible' },
     { 'nvim-treesitter/nvim-treesitter' },
     { 'ray-x/go.nvim' },
-    { 'ray-x/guihua.lua' },
-    { 'catppuccin/nvim' },
+    { 'catppuccin/nvim' }, -- o tema que uso
     { 'nvim-lualine/lualine.nvim' },
   })
 
