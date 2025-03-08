@@ -12,11 +12,10 @@ Este repositório contém minhas configurações pessoais do Neovim, gerenciadas
 ## Instalação
 
 1.  Clone este repositório:
-
+    no terminal coloque isso:
     ```bash
     git clone [https://github.com/ovodlol/.sun](https://github.com/ovodlol/.sun) ~/.config/nvim
     ```
-
 2.  Abra o Neovim e o Lazy irá instalar automaticamente os plugins configurados no seu `init.lua`.
 3.  Instale as dependências do LSP de Go (se estiver usando Go):
 
@@ -53,4 +52,7 @@ Sinta-se à vontade para modificar o arquivo `init.lua` e adicionar seus própri
 
 ## Capturas de tela
 
-(Adicione capturas de tela aqui)
+## Capturas de tela
+
+![a interface customizada](sun-imagens.png)
+
