@@ -35,9 +35,9 @@ dashboard.section.header.val = {
 
 -- Botões
   dashboard.section.buttons.val = {
-    dashboard.button("e", "📄 Novo Arquivo", ":ene <BAR> startinsert <CR>"),
+    dashboard.button("s", "🔎 Procurar Arquivo", ":Telescope find_files<CR>"),
     dashboard.button("r", "🕒 Arquivos Recentes", ":Telescope oldfiles<CR>"),
-    dashboard.button("n", "🔎 procurar")
+    dashboard.button("l", "😪 Lazy", ":Lazy<CR>"),
     dashboard.button("q", "❌ Sair", ":qa<CR>"),
   }
 

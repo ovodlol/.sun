@@ -5,27 +5,18 @@ require('telescope').setup {
   defaults = {
     prompt_prefix = "🔍 ", -- Altere o ícone do prompt
     selection_caret = "➜ ", -- Ícone para a seleção
+    layout_strategy = "horizontal",
     layout_config = {
-      horizontal = { preview_width = 0.6 }, -- Ajusta a largura do preview
-      vertical = { preview_height = 0.5 },  -- Ajusta a altura do preview
-    },
+      width = 0.5,
+      height = 0.9,
+      prompt_position = 'top',
+      preview_width = 0.3,
+    },    
     color_devicons = true, -- Habilitar ícones coloridos
-  },
-
-  pickers = {
-    find_files = {
-      theme = "dropdown", -- Use o tema "dropdown" para uma janela mais compacta
-    },
   },
   extensions = {
     file_browser = { --
-      layout_strategy = "vertical", -- Define o layout como vertical
-      layout_config = {
-        height = 1,   -- Ajusta a altura para ocupar toda a tela
-        prompt_position = "top", -- Posição do prompt
-      },
-      theme = "dropdown",
-      hijack_netrw = true,
+          
     },
   }
 }

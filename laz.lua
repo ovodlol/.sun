@@ -13,8 +13,35 @@ vim.opt.rtp:prepend(lazypath)
 -- lista de plugins do lazy
   require("lazy").setup({
 
+    {
+      "neovim/nvim-lspconfig",
+      dependencies = {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "hrsh7th/nvim-cmp",
+      },
+      config = function()
+        require "plugins.configs.lspconfig"
+      end,
+    },
+    {
+      "williamboman/mason.nvim",
+      config = function()
+        require "plugins.configs.mason"
+      end,
+    },
+    {'jose-elias-alvarez/null-ls.nvim'}, -- formata o codigo
     { "goolord/alpha-nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
-    { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
-
+    { "nvim-telescope/telescope.nvim", dependencies = { 
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope-file-browser.nvim"
+      } 
+    },
+    { 'tpope/vim-sensible' },
+    { 'nvim-treesitter/nvim-treesitter' },
+    { 'ray-x/go.nvim' },
+    { 'ray-x/guihua.lua' },
+    { 'catppuccin/nvim' },
+    { 'nvim-lualine/lualine.nvim' },
   })
 

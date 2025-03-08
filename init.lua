@@ -1,27 +1,11 @@
 -- requires(chama as confgurações de outros arquivos):
   package.path = package.path .. ';C:\\Users\\Eduardo\\AppData\\Local\\nvim\\?.lua'
   require('cnt')
+-- plugins
   require('laz')
-  require('alp')
 
--- plugins:
-  vim.call('plug#begin') -- usa o vim-plug (serve para gerenciar os plugins) em lua
-    local Plug = vim.fn['plug#']
-
-    -- lista de plugins
-      Plug 'tpope/vim-sensible'
-      Plug 'nvim-treesitter/nvim-treesitter'
-      Plug 'neovim/nvim-lspconfig'
-      Plug 'ray-x/go.nvim'
-      Plug 'ray-x/guihua.lua'
-      Plug 'catppuccin/nvim'
-      Plug 'nvim-lualine/lualine.nvim'
-      Plug 'ryanoasis/vim-devicons'
-      Plug 'nvim-telescope/telescope-file-browser.nvim'
-
-  vim.call('plug#end')
-
-
+  -- alpha
+    require('alp')
 
   -- catppuccin
     local catppuccin = require("catppuccin")
@@ -33,3 +17,14 @@
 
   -- telescope
     require('tele')
+
+  -- null-ls
+    local null_ls = require("null-ls")
+
+    null_ls.setup({
+      sources = {
+        null_ls.builtins.diagnostics.golangci_lint,
+      },
+    })
+
+
