@@ -54,5 +54,5 @@ Sinta-se à vontade para modificar o arquivo `init.lua` e adicionar seus própri
 
 ## Capturas de tela
 
-![a interface customizada](sun-imagens.png)
+![a interface customizada](screenshots/sun-imagens.png)
 
