@@ -20,13 +20,13 @@ vim.opt.rtp:prepend(lazypath)
         "hrsh7th/nvim-cmp",
       },
       config = function()
-        require "plugins.configs.lspconfig"
+        require "lspconfig"
       end,
     },
     {
       "williamboman/mason.nvim",
       config = function()
-        require "plugins.configs.mason"
+        require "mason"
       end,
     },
     {'jose-elias-alvarez/null-ls.nvim'}, -- formata o codigo

@@ -1,5 +1,5 @@
 -- requires(chama as confgurações de outros arquivos):
-  package.path = package.path .. ';C:\\Users\\Eduardo\\AppData\\Local\\nvim\\plugins\\configs\\?.lua'
+  package.path = package.path .. ";" .. vim.fn.stdpath("config") .. '/plugins/configs/?.lua'
   require('cnt')
 
   -- mini.file
