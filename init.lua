@@ -31,4 +31,6 @@
       },
     })
 
+  -- oil
+    require('oil')
 

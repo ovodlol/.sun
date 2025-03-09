@@ -14,4 +14,4 @@
         local opts = { noremap = true, silent = true }
         keymap('i', '<C-s>', '<cmd>w<CR>', opts)
         keymap('n', '<C-i>', '<cmd>Lazy<CR>', opts)
-        --keymap('n', '<leader>mf', ':<CR>', opts)
+        keymap('n', '<leader>ol', ':vsplit<CR>:vertical resize 30<CR>:Oil<CR>', opts)
