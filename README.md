@@ -1,4 +1,5 @@
 # Configurações do Neovim
+![a interface customizada](screenshots/sun_logo.png)
 
 Este repositório contém minhas configurações pessoais do Neovim, gerenciadas com o [Lazy](https://github.com/folke/lazy.nvim).
 
@@ -11,9 +12,10 @@ Este repositório contém minhas configurações pessoais do Neovim, gerenciadas
 
 ## Pré-requisitos
 
-* Neovim (versão 0.8 ou superior)
-* Git (instalação do repositório)
-* Golang (instalação dos pacotes do LSP)
+* [Neovim](https://github.com/neovim/neovim) (versão 0.8 ou superior)
+* [Git](https://git-scm.com/) (instalação do repositório)
+* [nerd fonts](https://www.nerdfonts.com/) (muito importante)
+* [Golang](https://go.dev/) (instalação dos pacotes do LSP)
     * Gopls (opcional, transforma o neovim numa IDE de Golang)
     * golangci-lint (opcional, verificação de código Go)
 
@@ -47,7 +49,7 @@ Minhas configurações incluem os seguintes plugins:
 * **LSP:**
     * `neovim/nvim-lspconfig`: Configurações para usar com o Language Server Protocol.
     * `williamboman/mason.nvim`: Gerenciador de pacotes para LSPs, linters e formatadores.
-    * `jose-elias-alvarez/null-ls.nvim`: Integra ferramentas externas como linters e formatadores como fontes LSP.
+    * `jose-elias-alvarez/null-ls.nvim`: Integra ferramentas externas como linters e formatadores como fontes LSP(vai ser trocado)
 
 * **Interface:**
     * `goolord/alpha-nvim`: Tela de boas-vindas personalizada.
@@ -63,8 +65,9 @@ Minhas configurações incluem os seguintes plugins:
 
 * O `nvim-lspconfig` é configurado para usar o `gopls` para Go.
 * O `null-ls` está configurado para usar o `golangci-lint` para verificação de código Go.
+* Nas próximas verções irei colocar novas configurações padrões de LSP
 
-## Personalização
+## Personalize
 
 Sinta-se à vontade para modificar o arquivo `init.lua` e adicionar seus próprios plugins no laz.lua que esta no plugins/configs. O Lazy facilita a configuração e o gerenciamento de plugins.
 
