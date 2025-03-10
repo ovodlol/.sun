@@ -1,9 +1,7 @@
 -- requires(chama as confgurações de outros arquivos):
   package.path = package.path .. ";" .. vim.fn.stdpath("config") .. '/plugins/configs/?.lua'
+  keymap = vim.keymap.set
   require('cnt')
-
-  -- mini.file
-    -- require('').setup({})
 
   -- plugins
     require('laz')
@@ -22,15 +20,18 @@
   -- telescope
     require('tele')
 
-  -- null-ls
-    local null_ls = require("null-ls")
-
-    null_ls.setup({
-      sources = {
-        null_ls.builtins.diagnostics.golangci_lint,
-      },
-    })
+  -- conform 
+    require("conf")
 
   -- oil
     require('oil')
+
+  -- LSP
+    require('lspconfig').gopls.setup{
+      settings = {
+        gopls = {
+                  
+        },
+      },
+    }
 

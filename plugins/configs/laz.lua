@@ -15,33 +15,17 @@ vim.opt.rtp:prepend(lazypath)
 
     {
       'stevearc/oil.nvim',
-      ---@module 'oil'
-      ---@type oil.SetupOpts
       opts = {},
-      -- Optional dependencies
       dependencies = { { "echasnovski/mini.icons", opts = {} } },
-      -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
-      -- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
       lazy = false,
     },
     {"neovim/nvim-lspconfig",
       dependencies = {
-        "williamboman/mason.nvim",
-        "williamboman/mason-lspconfig.nvim",
         "hrsh7th/nvim-cmp",
-      },
-      config = function()
-        require "lspconfig"
-      end,
+      }
     },
-    {
-      "williamboman/mason.nvim",
-      config = function()
-        require "mason"
-      end,
-    },
-    {'jose-elias-alvarez/null-ls.nvim'}, -- formata o codigo
-    { "goolord/alpha-nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
+    {"stevearc/conform.nvim"}, -- complementos para o LSP
+    { "goolord/alpha-nvim", dependencies = { "nvim-tree/nvim-web-devicons" } }, -- uma tela de inicio
     { "nvim-telescope/telescope.nvim", dependencies = { 
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope-file-browser.nvim"

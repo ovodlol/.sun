@@ -5,9 +5,9 @@ Este repositório contém minhas configurações pessoais do Neovim, gerenciadas
 
 ## Capturas de tela
 
-![a interface customizada](screenshots/sun_imagens.png)
+![interface customizada](screenshots/sun_imagens.png)
 
-![modos customizados](screenshots/sun_modes.png)
+![modos do Neovim customizados](screenshots/sun_modes.png)
 
 
 ## Pré-requisitos
@@ -48,14 +48,17 @@ Minhas configurações incluem os seguintes plugins:
 
 * **LSP:**
     * `neovim/nvim-lspconfig`: Configurações para usar com o Language Server Protocol.
-    * `williamboman/mason.nvim`: Gerenciador de pacotes para LSPs, linters e formatadores.
-    * `jose-elias-alvarez/null-ls.nvim`: Integra ferramentas externas como linters e formatadores como fontes LSP(vai ser trocado)
+    * `stevearc/conform.nvim`: Adiciona mais ferramentas para o LSP e pode formatar o código
 
 * **Interface:**
     * `goolord/alpha-nvim`: Tela de boas-vindas personalizada.
-    * `nvim-telescope/telescope.nvim`: Buscador de arquivos, símbolos e outros elementos.
     * `nvim-lualine/lualine.nvim`: Barra de status personalizável.
     * `catppuccin/nvim`: Tema de cores.
+    * `nvim-tree/nvim-web-devicons`: Suporte a icones para o Neovim
+
+* **Navegação:**
+    * `nvim-telescope/telescope.nvim`: Buscador de arquivos, símbolos e outros elementos.
+    * `stevearc/oil.nvim`: Uma barra em arvore muito poderosa um NERDtree, mas pode modifica arquivos(para usar digite ;ol no modo normal)
 
 * **Outros:**
     * `nvim-treesitter/nvim-treesitter`: Realce de sintaxe e informações sobre a estrutura do código.
@@ -63,12 +66,14 @@ Minhas configurações incluem os seguintes plugins:
 
 ## Configurações do LSP
 
-* O `nvim-lspconfig` é configurado para usar o `gopls` para Go.
-* O `null-ls` está configurado para usar o `golangci-lint` para verificação de código Go.
-* Nas próximas verções irei colocar novas configurações padrões de LSP
+* O `nvim-lspconfig` é configurado para usar o `gopls` para Golang, mas é bem fácil adicionar novos LSPs.
+* O `conform.nvim` está configurado para formatar código Golang Sintase a vontade para adicionar novos formatadores e se quiser adicione seus linters.
+* Nas próximas versões irei colocar novas configurações padrões de LSP
+
+
 
 ## Personalize
 
-Sinta-se à vontade para modificar o arquivo `init.lua` e adicionar seus próprios plugins no laz.lua que esta no plugins/configs. O Lazy facilita a configuração e o gerenciamento de plugins.
+Sinta-se à vontade para modificar o arquivo `init.lua` e adicionar seus próprios plugins no laz.lua que esta no plugins/configs. O Lazy facilita a configuração e o gerenciamento de plugins pro Neovim.
 
 
